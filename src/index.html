@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XLSX Order Splitter</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>XLSX Order Splitter</h1>
+      <input type="file" id="file-upload" accept=".xlsx" />
+      <div id="controls">
+        <button id="select-file-btn">Select Input XLSX</button>
+        <div id="selected-file" aria-live="polite">No file selected</div>
+
+        <button id="select-output-btn">Select Output XLSX</button>
+        <div id="selected-output" aria-live="polite">No output file selected</div>
+
+        <button id="split-btn" disabled>Split and Export XLSX</button>
+      </div>
+      <pre id="result-output"></pre>
+    </main>
+  </body>
+</html>
